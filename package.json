@@ -1,0 +1,23 @@
+{
+  "name": "badassgamedesign",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "pathfinding": "^0.4.17"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronaldho/badassgamedesign.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronaldho/badassgamedesign/issues"
+  },
+  "homepage": "https://github.com/ronaldho/badassgamedesign#readme"
+}
