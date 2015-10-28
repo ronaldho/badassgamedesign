@@ -1,0 +1,19 @@
+
+      .grid table tr td{
+        margin: 5px;
+        border: 1px solid red;
+        height: 45px;
+        width: 45px;
+      }  
+      .grid table tr td.path{
+        background: saddlebrown;
+      }
+      .grid table tr td.portal{
+        background: purple;
+      }
+      .grid table tr td.terrain{
+        background: green;
+      }
+      .grid .gameworld{
+        margin: 0 auto;
+      }
