@@ -1,19 +1,52 @@
 
       .grid table tr td{
-        margin: 5px;
-        border: 1px solid red;
+        margin: 3px;
         height: 45px;
         width: 45px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 3px;
       }  
-      .grid table tr td.path{
-        background: saddlebrown;
+      .grid table tr td{
+        background: seashell;
+      }
+      .grid table tr td.land{
+        background: url("../images/texture_earth.png");
+        background-size: 100% 100%;
+      }
+      .grid table tr td.water{
+        background: url("../images/texture_water.png");
+        background-size: 100% 100%;
+      }
+      .grid table tr td.fire{
+        background: url("../images/texture_fire.png");
+        background-size: 100% 100%;
+      }
+      .grid table tr td.thunder{
+        background: url("../images/texture_thunder.png");
+        background-size: 100% 100%;
       }
       .grid table tr td.portal{
         background: purple;
       }
-      .grid table tr td.terrain{
-        background: green;
+      .grid table tr td.done{
+        background: black;
+        color: White;
       }
       .grid .gameworld{
         margin: 0 auto;
+      }
+      .playerScores{
+            position: absolute;
+            top: 50;
+            left:0;
+        padding: 5px;
+        
+      }
+      .playerScores .playerDetails.highlight{
+        border: solid 2px Black;
+      }
+      .playerScores .bombs{
+        font-size: 24px;
+        font-weight: bold;
       }
