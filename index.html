@@ -20,29 +20,31 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/pathfinding-browser.min.js"></script>
     <script type="text/javascript" src="js/path.js"></script>
-    <div class="testing">
+    <div class="testing" style="display:none">
       <input type="button" id="generatePath" value="Generate"/>
-    <input type="button" id="showPathForPlayer" value="Show Path"/>
+      <input type="button" id="showPathForPlayer" value="Show Path"/>
     </div>
-    <div class="playerScores">
-      <div id="landDino" class="playerDetails highlight">
-        <span>Land Dinosaur</span>
-        <span class="bombs">0</span>
-      </div>
-      <div id="waterDino" class="playerDetails">
-        <span>Water Dinosaur</span>
-        <span class="bombs">0</span>
-      </div>
-      <div id="fireDino" class="playerDetails">
-        <span>Fire Dinosaur</span>
-        <span class="bombs">0</span>
-      </div>
-      <div id="airDino" class="playerDetails">
-        <span>Thunder Dinosaur</span>
-        <span class="bombs">0</span>
-      </div>
+    <div class="game">
+        <div class="playerScores">
+          <div id="fireDino" class="playerDetails highlight" style="top:0; left:100px;">
+            <img src="images/dino_fire.png" class="dinoImage"/>
+            <span class="bombs"><img src="images/bomb_fire.png" class="dinoBomb"/></span>
+          </div>
+          <div id="airDino" class="playerDetails" style="top:0; right:100px;">
+            <img src="images/dino_thunder.png" class="dinoImage"/>
+            <span class="bombs"><img src="images/bomb_thunder.png" class="dinoBomb"/></span>
+          </div>
+          <div id="landDino" class="playerDetails " style="bottom:0; right:100px;">
+            <img src="images/dino_earth.png" class="dinoImage"/>
+            <span class="bombs"><img src="images/bomb_earth.png" class="dinoBomb"/></span>
+          </div>
+          <div id="waterDino" class="playerDetails" style="bottom:0; left:100px;">
+            <img src="images/dino_water.png" class="dinoImage"/>
+            <span class="bombs"><img src="images/bomb_water.png" class="dinoBomb"/></span>
+          </div>
+        </div>
+        <div class="grid">
+          
+        </div>
     </div>
-  <div class="grid">
-    
-  </div>
 </body>

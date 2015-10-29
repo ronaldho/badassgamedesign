@@ -4,7 +4,7 @@ var gridWorldArray = new Array();
 var currentPlayer = 1;
 var playerPos = [[0, 0], [13, 0], [13, 13], [0, 13]];
 var playerBombs = [0, 0, 0, 0];
-var color = ["land", "water", "fire", "thunder", "portal", "done", "empty"];
+var color = ["fire", "thunder", "earth", "water", "portal", "done", "empty"];
         function tile(xpos, ypos){
           var elem = $(".gameworld tr td[xpos="+ xpos +"][ypos = " +ypos + "]");
           return elem;
@@ -63,7 +63,8 @@ var color = ["land", "water", "fire", "thunder", "portal", "done", "empty"];
                 i++;
             }    
             if (path.length > 0)
-                alert(currentPlayer + "\n Found Path:" + path.join("\n"));
+                    alert("Player:" + color[currentPlayer] + " won the game! You can continue competing.");
+                //alert(currentPlayer + "\n Found Path:" + path.join("\n"));
         }
         function createPathFromFinder(path){
           var arrayLength = path.length;

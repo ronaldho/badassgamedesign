@@ -6,11 +6,15 @@
         text-align: center;
         cursor: pointer;
         border-radius: 3px;
+        border:Solid 1px sandybrown;
       }  
       .grid table tr td{
         background: seashell;
       }
-      .grid table tr td.land{
+      .grid table tr td:hover{
+            background: rosybrown;
+      }
+      .grid table tr td.earth{
         background: url("../images/texture_earth.png");
         background-size: 100% 100%;
       }
@@ -33,15 +37,26 @@
         background: black;
         color: White;
       }
+      .game{
+            position: relative;
+      }
+      .grid{
+            position: absolute;
+            margin:0 auto;
+            top:0;
+            left: 350px;
+      }
       .grid .gameworld{
         margin: 0 auto;
       }
       .playerScores{
-            position: absolute;
-            top: 50;
-            left:0;
+            position: relative;
+            height:700px;
         padding: 5px;
         
+      }
+      .playerScores .playerDetails{
+            position: absolute;
       }
       .playerScores .playerDetails.highlight{
         border: solid 2px Black;
@@ -49,4 +64,11 @@
       .playerScores .bombs{
         font-size: 24px;
         font-weight: bold;
+      }
+      .playerScores .dinoImage{
+            max-width: 96px;
+            clear:both;
+      }
+      .playerScores .dinoBomb{
+            max-width: 48px;
       }
